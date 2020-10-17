@@ -1,32 +1,38 @@
 
 import java.util.Scanner;
 
-public class Controller {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        Scanner in1 = new Scanner(System.in);
         int num1 = in.nextInt();
+        String operation = in1.next();
         int num2 = in.nextInt();
-
-        String operation = in.next();
         int result;
-        switch (operation) {
+        switch (operation){
             case "+":
-                System.out.println(num1 + num2);
+                System.out.println(num1+num2);
                 break;
             case "-":
-                System.out.println(num1 - num2);
+                System.out.println(num1-num2);
                 break;
             case "*":
-                System.out.println(num1 * num2);
+
+                System.out.println(num1*num2);
                 break;
             case "/":
-                System.out.println(num1 / num2);
+                System.out.println(num1/num2);
                 break;
-
             default:
                 System.out.println("Непонимаю ваше действие");
+
+
+
+
         }
+
     }
 }
+
 
    
